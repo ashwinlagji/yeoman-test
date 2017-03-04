@@ -1,0 +1,28 @@
+<header class="header">
+    <div class="nav">
+        <ul>
+            <li>
+                Home
+            </li>
+            <li>
+                DEV
+            </li>
+            <li>
+                MOBILE
+            </li>
+            <li>
+                About
+            </li>
+            <li class="icon">
+                ☰
+            </li>
+        </ul>   
+    </div>
+    
+  <h1>todos</h1>
+  <fountain-todo-text-input
+    [newTodo]="true"
+    (onSave)="handleSave($event)"
+    [placeholder]="'What needs to be done?'"
+  ></fountain-todo-text-input>
+</header>

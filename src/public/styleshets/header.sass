@@ -1,0 +1,25 @@
+.nav
+    display: flex
+    height: 50px
+    ul
+        display: flex
+        background-color: black
+        padding: 0
+        margin: 0
+        flex-grow: 1
+        
+        li
+            display: flex
+            padding: 0 20px
+            list-style-type: none
+            background-color: rgba(0,0,0,0);
+            color: rgba(255,255,255,0.8)
+            align-items: center
+            justify-content: center
+            .icon
+                margin-left: auto
+            &:hover
+                background-color: rgba(255,255,255,0.25);
+                color: rgba(255,255,255,1)
+            &:nth-last-child(1)
+                margin-left: auto

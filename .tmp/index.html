@@ -1,0 +1,81 @@
+<!doctype html>
+<html>
+  <head>
+    <base href="/">
+    <meta charset="utf-8">
+    <title>ngrx/store TodoMVC</title>
+    <meta name="description" content="">
+    <meta name="viewport" content="width=device-width">
+    <link rel="icon" type="image/png" href="http://fountainjs.io/assets/imgs/fountain.png" />
+    <style>
+        .loading {
+            border: 2px solid green;
+            z-index: 10;
+            position: fixed;
+            left: 0;
+            top: 0;
+            right: 0;
+            bottom: 0;
+            background-color: rgba(0, 0, 0, 0.5);
+        }
+        .loading .loading-overlay {
+            width: 100%;
+            height: 100%;
+            display: flex;
+            align-items: center;
+            justify-content: center;
+        }
+        .loading .loading-overlay .loading-icon {
+            height: 200px;
+        }
+        .loading .loading-overlay .loading-text {
+            display: flex;
+            justify-content: center;
+            color: white;
+            font-size: 20px;
+            margin-top: -112px;
+        }
+
+      
+      
+    </style>
+  </head>
+
+  <body>
+
+      <input type="checkbox" id="toggler" style="display:none">
+    <div class="todoapp">
+        <ui-view>
+            <div id="target" class="loading">
+                <div class="loading-overlay">
+                    <p class="loading-spinner">
+                        <span class="loading-icon">
+                            <img src="/public/images/GD.gif">
+                        </span>
+                        <span class="loading-text">loading...</span>
+                    </p>
+                </div>
+            </div>
+        </ui-view>
+        
+        
+        <label for="toggler" class="toggle">☰</label>
+        <div class="sidepanel">
+            <ul>
+                <li>
+                    Home
+                </li>
+                <li>
+                    DEV
+                </li>
+                <li>
+                    MOBILE
+                </li>
+                <li>
+                    About
+                </li>
+            </ul>
+        </div>
+    </div>
+  <script type="text/javascript" src="index.js"></script></body>
+</html>
